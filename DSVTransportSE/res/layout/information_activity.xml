@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.12" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.12"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txtName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/namn"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="35px" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="50px"
+                        android:padding="5dp"
+                        android:text="@string/name"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="30px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txtReg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/registreringsnummer"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="35px" />
+
+                    <TextView
+                        android:id="@+id/reg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="50px"
+                        android:padding="5dp"
+                        android:text="@string/reg"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="30px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txtProduct"
+                        android:layout_width="187dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/produktinformation"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="35px" />
+
+                    <TextView
+                        android:id="@+id/product"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="@string/product"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/productNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="67890"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="30px" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp" >
+
+        <Button
+            android:id="@+id/btnAccept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:onClick="onClick"
+            android:text="@string/godkänn" />
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:onClick="onClick"
+            android:text="@string/redigera" />
+    </RelativeLayout>
+
+</LinearLayout>

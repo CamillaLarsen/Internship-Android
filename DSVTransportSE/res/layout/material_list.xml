@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:hint="@string/soeg"
+        android:inputType="textFilter" >
+    </EditText>
+
+    <ListView
+        android:id="@+id/searchList"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_weight="0.50"
+        android:choiceMode="singleChoice" >
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06" >
+
+        <Button
+            android:id="@+id/btnOK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:onClick="onClick"
+            android:text="@string/OK" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:onClick="onClick"
+            android:text="@string/avbryt" />
+    </RelativeLayout>
+
+</LinearLayout>
